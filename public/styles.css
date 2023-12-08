@@ -9,9 +9,9 @@
 }
 
 :root {
-    --dark: #011936;
-    --pink: #ed254e;
-    --yellow: #f9dc5c;
+    --dark: #272932;
+    --violet: #6369d1;
+    --yellow: #ffc759;
     --opensans: 'Open Sans', sans-serif;
     --mulish: 'Mulish', sans-serif;
 }
@@ -30,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--pink);
+    background-color: var(--violet);
     padding: 4rem;
     border-radius: 10px;
     box-shadow: 0 0 10px #000;
@@ -96,7 +96,7 @@ form button {
 
 form button:hover {
     background-color: #fff;
-    color: var(--pink);
+    color: var(--violet);
 }
 
 .enquiry {
@@ -119,7 +119,7 @@ form button:hover {
     right: 1rem;
     bottom: 1rem;
     padding: 1rem 1.4rem;
-    background-color: var(--pink);
+    background-color: var(--violet);
     color: #fff;
     border-radius: 5px;
     display: flex;
@@ -140,4 +140,61 @@ form button:hover {
 
 h2 span{
     color: var(--dark);
+}
+
+.super-group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.header{
+    display: flex;
+    background-color: var(--violet);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    color: #fff;
+    font-family: var(--mulish);
+    height: 64px;
+}
+
+.header > form button{
+    width: fit-content;
+}
+
+.header > form{
+    width: auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--opensans);
+}
+
+.logo i{
+    font-size: 1.8rem;
+}
+
+.main{
+    height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .content{
+    width: 60%;
+}
+
+.main .content > i{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: var(--yellow);
+    padding: 2rem;
+    border: 2px solid var(--yellow);
+    border-radius: 50%;
 }

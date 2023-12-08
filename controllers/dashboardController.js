@@ -3,10 +3,11 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
   if (req.session.user || req.session.msg) {
-    const userName = req.session.user.name;
+    const firstName = req.session.user.fname;
+    const lastName = req.session.user.lname;
     const userEmail = req.session.user.email;
     const msg = req.session.msg;
-    res.render("dashboard", { msg, userName, userEmail });
+    res.render("dashboard", { msg, firstName, lastName, userEmail });
   } else {
     res.redirect("/");
   }

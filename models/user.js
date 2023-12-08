@@ -1,8 +1,8 @@
 const db = require('../db'); // Create a MySQL connection and export it as 'db'
 
-function createUser(name, email, password, callback) {
-  const sql = 'INSERT INTO users (name, email, password) VALUES (?, ?, ?)';
-  db.query(sql, [name, email, password], (err) => {
+function createUser(fname, lname, email, password, callback) {
+  const sql = 'INSERT INTO users (fname, lname, email, password) VALUES (?, ?, ?, ?)';
+  db.query(sql, [fname, lname, email, password], (err) => {
     callback(err);
   });
 }

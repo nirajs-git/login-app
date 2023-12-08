@@ -27,10 +27,11 @@ router.get("/register", (req, res) => {
 });
 
 router.post("/register", (req, res) => {
-  const { name, email, password } = req.body;
+  const { fname, lname, email, password } = req.body;
 
-  user.createUser(name, email, password, (err) => {
+  user.createUser(fname, lname, email, password, (err) => {
     if (err) {
+      console.log(err)
       req.session.msg = "Registration Failed..!";
     } else {
       req.session.msg = "Registration Successful..!";
