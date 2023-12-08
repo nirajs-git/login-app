@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"  # Change this if your build command is different
+  publish = "public"        # Change this if your built files are in a different directory
+
+[context.production.environment]
+  NODE_VERSION = "18"        # Specify the Node.js version your app uses
+
+[context.split1]
+  command = "npm run build"  # Change this if your build command is different
+  publish = "public"        # Change this if your built files are in a different directory
+
+[context.split1.environment]
+  NODE_VERSION = "18"        # Specify the Node.js version your app uses
