@@ -1,0 +1,143 @@
+/** Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;700&family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--opensans);
+}
+
+:root {
+    --dark: #011936;
+    --pink: #ed254e;
+    --yellow: #f9dc5c;
+    --opensans: 'Open Sans', sans-serif;
+    --mulish: 'Mulish', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--pink);
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+.content h2 {
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--dark);
+    position: relative;
+}
+
+.form-group input {
+    padding: 0.6rem 0.2rem;
+    border: none;
+    width: 100%;
+    padding: 0.8rem 0.4rem;
+    font-family: var(--mulish);
+    background-color: transparent;
+}
+
+.form-group input:focus{
+    outline: none;
+}
+
+.form-group i{
+    position: absolute;
+    right: 0.6rem;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+form button {
+    padding: 0.4rem 1rem;
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+    color: var(--dark);
+    border: none;
+    box-shadow: 0 0 5px var(--dark);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+    width: 100%;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: var(--pink);
+}
+
+.enquiry {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: var(--dark);
+}
+
+.enquiry a {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.enquiry a:hover {
+    color: #fff;
+}
+
+.message{
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    padding: 1rem 1.4rem;
+    background-color: var(--pink);
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    transition: all 0.3s ease-in;
+}
+
+#dashboard-content h2{
+    text-align: center;
+}
+
+#dashboard-content > span{
+    margin-bottom: 2rem;
+    color: white;
+    font-family: var(--mulish);
+}
+
+h2 span{
+    color: var(--dark);
+}
